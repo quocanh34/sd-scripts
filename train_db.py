@@ -117,6 +117,9 @@ def train(args):
     # モデルを読み込む
     text_encoder, vae, unet, load_stable_diffusion_format = train_util.load_target_model(args, weight_dtype, accelerator)
 
+    #test#
+    print(unet)
+
     # verify load/save model formats
     if load_stable_diffusion_format:
         src_stable_diffusion_ckpt = args.pretrained_model_name_or_path
