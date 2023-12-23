@@ -118,7 +118,7 @@ def train(args):
     text_encoder, vae, unet, load_stable_diffusion_format = train_util.load_target_model(args, weight_dtype, accelerator)
 
     #test#
-    print(unet)
+    # print(unet)
 
     # verify load/save model formats
     if load_stable_diffusion_format:

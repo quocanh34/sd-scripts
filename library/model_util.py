@@ -1243,7 +1243,7 @@ def save_diffusers_checkpoint(v2, output_dir, text_encoder, unet, pretrained_mod
         vae = AutoencoderKL.from_pretrained(pretrained_model_name_or_path, subfolder="vae")
 
     #test#
-    print(unet)
+    # print(unet)
 
     pipeline = StableDiffusionPipeline(
         unet=unet,
